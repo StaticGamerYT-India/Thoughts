@@ -60,7 +60,7 @@ function Main() {
           />
           <h1 className="text-zinc-200 text-2xl font-medium tracking-tighter">Parmar</h1>
         </div> 
-        <h2 className="text-xl font-small text-zinc-500 tracking-tighter">Trying to be a better person, so nobody gets the opportunity to blame me of hurting them. <br/> <h2> Avid SRK Fanboy, </h2> Not-so-nerdy coder but simply an enthusiast, bas maza aata hai </h2>
+        <h2 className="text-xl font-small text-zinc-500 tracking-tighter">Trying to be a better person everyday, Kisiko hurt karke acha nhi lagta, <br/> <h2> Avid SRK Fanboy, </h2> Not-so-nerdy coder but simply an enthusiast, bas maza aata hai </h2>
       </div>
     </div>
   );
