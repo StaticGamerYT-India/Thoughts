@@ -11,17 +11,17 @@ function Header() {
       </Link>
       <div className="flex justify-end gap-2 items-center group">
         <span className="font-light text-xs uppercase text-white text-opacity-25 group-hover:translate-x-[-10px] transition-transform md:inline hidden">Mujhe yahan dhundho  -&gt;</span> 
-        <a href="https://twitter.com/StaticGamerYT17" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-500 hover:text-white transition-all">
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-500 hover:text-white transition-all">
           <FaXTwitter className="h-4 w-4 " />
         </a>
-        <a href="https://www.linkedin.com/in/smeet-parmar-28251418b/" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-500 hover:text-white transition-all">
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-500 hover:text-white transition-all">
           <FaLinkedin className="h-4 w-4 " />
         </a>
         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-500 hover:text-white transition-all">
           <FaInstagram className="h-4 w-4 " />
         </a>
         
-        <a href="https://github.com/StaticGamerYT-India" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-500 hover:text-white transition-all">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-500 hover:text-white transition-all">
           <FaGithub className="h-4 w-4 " />
         </a>
       </div>
