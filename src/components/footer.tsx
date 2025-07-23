@@ -10,10 +10,10 @@ function Footer() {
       <div className="flex items-center justify-between border-t border-zinc-800 py-3">
         <div className="text-sm text-white">
           <span>Smeet Parmar</span>
-          <span className="hidden md:inline text-zinc-500"> — @gmail.com</span>
+          <span className="hidden md:inline text-zinc-500"> — baadmedaaldunga@gmail.com</span>
         </div>
         <div className="flex justify-end gap-2 items-center">
-          <a href="https://www.youtube.com/@StaticGamerYT" target="_blank" rel="noopener noreferrer" className=" text-zinc-500 hover:text-white transition-all">
+          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className=" text-zinc-500 hover:text-white transition-all">
             <Button variant="link" size="sm" className=" font-normal text-sm text-white h-4">
               Subscribe karlo chalo <MdOutlineArrowOutward className="ml-1"/>
             </Button>
