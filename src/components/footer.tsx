@@ -6,16 +6,16 @@ import { Button } from "./ui/button";
 
 function Footer() {
   return (
-    <div className="fixed bottom-0 z-50 w-full px-6 bg-black">
-      <div className="flex items-center justify-between border-t border-zinc-800 py-3">
-        <div className="text-sm text-white">
+    <div className="w-full px-4 sm:px-6 md:px-8 bg-black">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-zinc-800 py-4 max-w-2xl mx-auto">
+        <div className="text-sm text-white text-center sm:text-left order-2 sm:order-1">
           <span>Smeet Parmar</span>
           <span className="hidden md:inline text-zinc-500"> — baadmedaaldunga@gmail.com</span>
         </div>
-        <div className="flex justify-end gap-2 items-center">
-          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className=" text-zinc-500 hover:text-white transition-all">
-            <Button variant="link" size="sm" className=" font-normal text-sm text-white h-4">
-              Subscribe karlo chalo <MdOutlineArrowOutward className="ml-1"/>
+        <div className="flex justify-center sm:justify-end gap-2 items-center order-1 sm:order-2">
+          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-all">
+            <Button variant="link" size="sm" className="font-normal text-sm text-white h-4 px-0">
+              Subscribe <MdOutlineArrowOutward className="ml-1"/>
             </Button>
           </a>
         </div>

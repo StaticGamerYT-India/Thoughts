@@ -53,11 +53,11 @@ function Startups() {
   ];
 
   return (
-    <Carousel itemCount={startups.length} className="w-full mb-12">
-      <CarouselContent className="-ml-1">
+    <Carousel itemCount={startups.length} className="w-full mb-12 sm:mb-16">
+      <CarouselContent className="-ml-1 md:-ml-2">
         {startups.map((startup, index) => (
-          <CarouselItem key={index} className="pl-1">
-            <div className="p-1 relative group rounded-md">
+          <CarouselItem key={index} className="pl-1 md:pl-2">
+            <div className="p-1 relative group rounded-md aspect-square">
               {startup.content.endsWith('.mp4') ? (
                 <video
                   src={startup.content}
@@ -74,18 +74,20 @@ function Startups() {
                   className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:opacity-50 rounded-lg"
                 />
               )}
-              <div className="absolute inset-0 bg-black bg-opacity-0 transition duration-500 ease-in-out group-hover:bg-opacity-50 rounded-lg">
-                <div className="flex flex-col aspect-square items-start justify-start p-6 opacity-0 group-hover:opacity-100">
-                  <h2 className="text-xl pb-1 font-semibold text-zinc-200 tracking-tighter">
+              <div className="absolute inset-0 bg-black bg-opacity-0 transition duration-500 ease-in-out group-hover:bg-opacity-50 rounded-lg flex flex-col justify-between p-3 sm:p-6">
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <h2 className="text-lg sm:text-xl pb-1 font-semibold text-zinc-200 tracking-tighter">
                     {startup.name}
                   </h2>
-                  <p className="text-sm text-zinc-200">
+                  <p className="text-xs sm:text-sm text-zinc-200 line-clamp-2">
                     {startup.description}
                   </p>
-                  <p className="text-sm text-zinc-400 absolute top-0 right-0 p-5">
+                </div>
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <p className="text-xs sm:text-sm text-zinc-400">
                     {startup.timeRange}
                   </p>
-                  <p className="text-sm text-zinc-200 absolute bottom-0 left-0 p-5">
+                  <p className="text-xs sm:text-sm text-zinc-200 line-clamp-3">
                     {startup.traction}
                   </p>
                 </div>

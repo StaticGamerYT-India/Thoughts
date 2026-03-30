@@ -17,12 +17,12 @@ export default function Landing() {
 
   return (
     <div className="bg-black text-zinc-200 flex items-center justify-center overflow-x-hidden">
-        <section className="flex flex-col w-full max-w-[3000px] mx-auto min-h-screen">
+        <section className="flex flex-col w-full min-h-screen pt-16 pb-20">
           <Header />
-          <div className="flex flex-col items-start justify-center w-full lg:w-1/3 mx-auto p-8 md:p-0">
+          <div className="flex flex-col items-start justify-center w-full px-4 sm:px-6 md:px-8 max-w-2xl mx-auto">
             <Main />
             <Startups />
-            <div className="flex space-x-4 -m-4 py-8 overflow-x-auto scrollbar-hide">
+            <div className="flex space-x-2 sm:space-x-4 py-8 overflow-x-auto scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
               <Button 
                 variant='ghost' 
                 onClick={() => setSelectedSegment('writings')} 
@@ -49,18 +49,21 @@ export default function Landing() {
 
 function Main() {
   return (
-    <div className="flex flex-col justify-center h-64 pt-40 pb-24">
-      <div className="flex flex-col items-start justify-center text-left gap-2">
-        <div className="flex items-center space-x-2">
-          <h1 className="text-zinc-200 text-2xl font-medium tracking-tighter">Smeeeeeeeet</h1>
+    <div className="flex flex-col justify-center w-full py-12 sm:py-20 md:py-24">
+      <div className="flex flex-col items-start justify-center text-left gap-2 md:gap-4">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-2">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-medium tracking-tighter text-zinc-200">Smeeeeeeeet</h1>
           <img 
             src="/adam.jpg" 
             alt="Adam Zvada" 
             className="w-8 h-8 rounded-full border-1 border-zinc-800 object-cover transition-transform duration-2000 hover:duration-200 animate-spin" 
           />
-          <h1 className="text-zinc-200 text-2xl font-medium tracking-tighter">Parmar</h1>
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-medium tracking-tighter text-zinc-200">Parmar</h1>
         </div> 
-        <h2 className="text-xl font-small text-zinc-500 tracking-tighter">Trying to be a better person everyday, Kisiko hurt karke acha nhi lagta, <br/> <h2> Avid SRK Fanboy, </h2> Not-so-nerdy coder but simply an enthusiast, bas maza aata hai, ye images pe click Karo aur swipe karo kahaani sunne ke liye </h2>
+        <h2 className="text-sm sm:text-base md:text-lg text-zinc-500 tracking-tighter leading-relaxed">
+          Trying to be a better person everyday, Kisiko hurt karke acha nhi lagta, <br className="hidden sm:block"/> 
+          Avid SRK Fanboy, Not-so-nerdy coder but simply an enthusiast, bas maza aata hai, ye images pe click Karo aur swipe karo kahaani sunne ke liye
+        </h2>
       </div>
     </div>
   );

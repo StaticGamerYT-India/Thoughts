@@ -58,13 +58,13 @@ export default async function PostPage({ params }: BlogProps) {
   return (
     <div className="flex flex-col min-h-screen bg-black text-white">
       <Header />
-      <article className="py-40 mx-auto max-w-xl flex-grow">
+      <article className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 mx-auto w-full max-w-2xl flex-grow">
         <Link href="/" className="text-sm text-zinc-600 hover:text-zinc-200">
           {'<- Back'}
         </Link>
-        <h1 className="text-4xl font-semibold tracking-tighter mb-2 mt-8 text-zinc-200">{blog.title}</h1>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tighter mb-2 mt-8 text-zinc-200">{blog.title}</h1>
         {blog.description && (
-          <p className="text-base mt-0 text-zinc-500">
+          <p className="text-sm sm:text-base mt-0 text-zinc-500">
             {blog.description}
           </p>
         )}
@@ -72,7 +72,7 @@ export default async function PostPage({ params }: BlogProps) {
           {format(parseISO(blog.date), 'LLLL d, yyyy')}
         </time>
         <hr className="my-4 border-zinc-800" />
-        <div className="text-zinc-200 text-base mb-36">
+        <div className="text-zinc-200 text-sm sm:text-base mb-36">
           <Mdx code={blog.body.code} />
         </div>
       </article>
