@@ -58,11 +58,11 @@ function Startups() {
       <CarouselContent className="-ml-1 md:-ml-2">
         {startups.map((startup, index) => (
           <CarouselItem key={index} className="pl-1 md:pl-2">
-            <div className="p-1 relative group rounded-md aspect-square overflow-hidden">
+            <div className="p-1 relative group rounded-md overflow-hidden">
               {startup.content.endsWith('.mp4') ? (
                 <video
                   src={startup.content}
-                  className="w-full h-full object-cover transition duration-500 ease-in-out rounded-lg"
+                  className="w-full h-auto object-cover transition duration-500 ease-in-out rounded-lg"
                   loop
                   autoPlay
                   muted
@@ -72,7 +72,7 @@ function Startups() {
                 <img
                   src={startup.content}
                   alt={startup.name}
-                  className="w-full h-full object-cover transition duration-500 ease-in-out rounded-lg"
+                  className="w-full h-auto object-cover transition duration-500 ease-in-out rounded-lg"
                 />
               )}
               <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex flex-col justify-between p-3 sm:p-6">
