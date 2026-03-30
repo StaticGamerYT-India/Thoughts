@@ -61,7 +61,7 @@ function Startups() {
               {startup.content.endsWith('.mp4') ? (
                 <video
                   src={startup.content}
-                  className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:opacity-50 rounded-lg"
+                  className="w-full h-full object-cover transition duration-500 ease-in-out rounded-lg"
                   loop
                   autoPlay
                   muted
@@ -71,11 +71,11 @@ function Startups() {
                 <img
                   src={startup.content}
                   alt={startup.name}
-                  className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:opacity-50 rounded-lg"
+                  className="w-full h-full object-cover transition duration-500 ease-in-out rounded-lg"
                 />
               )}
-              <div className="absolute inset-0 bg-black bg-opacity-0 transition duration-500 ease-in-out group-hover:bg-opacity-50 rounded-lg flex flex-col justify-between p-3 sm:p-6">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex flex-col justify-between p-3 sm:p-6">
+                <div className="transition-opacity duration-500">
                   <h2 className="text-lg sm:text-xl pb-1 font-semibold text-zinc-200 tracking-tighter">
                     {startup.name}
                   </h2>
@@ -83,7 +83,7 @@ function Startups() {
                     {startup.description}
                   </p>
                 </div>
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <div className="transition-opacity duration-500">
                   <p className="text-xs sm:text-sm text-zinc-400">
                     {startup.timeRange}
                   </p>
