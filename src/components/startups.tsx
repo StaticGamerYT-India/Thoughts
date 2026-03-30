@@ -58,7 +58,7 @@ function Startups() {
       <CarouselContent className="-ml-1 md:-ml-2">
         {startups.map((startup, index) => (
           <CarouselItem key={index} className="pl-1 md:pl-2">
-            <div className="p-1 relative group rounded-md aspect-square">
+            <div className="p-1 relative group rounded-md aspect-square overflow-hidden">
               {startup.content.endsWith('.mp4') ? (
                 <video
                   src={startup.content}
@@ -69,10 +69,9 @@ function Startups() {
                   playsInline
                 />
               ) : (
-                <Image
+                <img
                   src={startup.content}
                   alt={startup.name}
-                  fill
                   className="w-full h-full object-cover transition duration-500 ease-in-out rounded-lg"
                 />
               )}
