@@ -53,7 +53,7 @@ function Startups() {
   ];
 
   return (
-    <Carousel itemCount={startups.length} className="w-full mb-12 sm:mb-16">
+    <Carousel itemCount={startups.length} className="w-full mb-16 sm:mb-20 md:mb-24">
       <CarouselContent className="-ml-1 md:-ml-2">
         {startups.map((startup, index) => (
           <CarouselItem key={index} className="pl-1 md:pl-2">

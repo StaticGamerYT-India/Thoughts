@@ -49,9 +49,9 @@ export default function Landing() {
 
 function Main() {
   return (
-    <div className="flex flex-col justify-center w-full py-12 sm:py-20 md:py-24">
-      <div className="flex flex-col items-start justify-center text-left gap-2 md:gap-4">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-2">
+    <div className="flex flex-col justify-center w-full py-8 sm:py-16 md:py-24">
+      <div className="flex flex-col items-start justify-center text-left gap-3 md:gap-4">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-2 w-full">
           <h1 className="text-xl sm:text-2xl md:text-3xl font-medium tracking-tighter text-zinc-200">Smeeeeeeeet</h1>
           <img 
             src="/adam.jpg" 
@@ -60,8 +60,8 @@ function Main() {
           />
           <h1 className="text-xl sm:text-2xl md:text-3xl font-medium tracking-tighter text-zinc-200">Parmar</h1>
         </div> 
-        <h2 className="text-sm sm:text-base md:text-lg text-zinc-500 tracking-tighter leading-relaxed">
-          Trying to be a better person everyday, Kisiko hurt karke acha nhi lagta, <br className="hidden sm:block"/> 
+        <h2 className="text-sm sm:text-base md:text-lg text-zinc-500 tracking-tighter leading-relaxed w-full">
+          Trying to be a better person everyday, Kisiko hurt karke acha nhi lagta,<br className="hidden sm:block"/> 
           Avid SRK Fanboy, Not-so-nerdy coder but simply an enthusiast, bas maza aata hai, ye images pe click Karo aur swipe karo kahaani sunne ke liye
         </h2>
       </div>
