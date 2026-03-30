@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link'
+import Image from 'next/image'
 import React, { useState } from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -53,9 +54,11 @@ function Main() {
       <div className="flex flex-col items-start justify-center text-left gap-3 md:gap-4">
         <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-2 w-full">
           <h1 className="text-xl sm:text-2xl md:text-3xl font-medium tracking-tighter text-zinc-200">Smeeeeeeeet</h1>
-          <img 
+          <Image 
             src="/adam.jpg" 
             alt="Adam Zvada" 
+            width={32}
+            height={32}
             className="w-8 h-8 rounded-full border-1 border-zinc-800 object-cover transition-transform duration-2000 hover:duration-200 animate-spin" 
           />
           <h1 className="text-xl sm:text-2xl md:text-3xl font-medium tracking-tighter text-zinc-200">Parmar</h1>

@@ -6,6 +6,7 @@ import {
   CarouselPrevious,
   CarouselIndicator,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 
 
 function Startups() {
@@ -68,9 +69,10 @@ function Startups() {
                   playsInline
                 />
               ) : (
-                <img
+                <Image
                   src={startup.content}
                   alt={startup.name}
+                  fill
                   className="w-full h-full object-cover transition duration-500 ease-in-out rounded-lg"
                 />
               )}
